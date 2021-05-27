@@ -7,10 +7,14 @@ namespace LinkedListImplementation
         static void Main(string[] args)
         {
             LinkedList list = new LinkedList();
-            list.Append(56);
-            list.Append(30);
-            list.Append(70);
+            list.Add(56);
+            list.Add(70);
+            Console.WriteLine("The list before inserting 30 is : ");
             list.Display();
+            list.InsertAtParticularPosition(3, 30);
+            Console.WriteLine("The list after inserting 30 is : ");
+            list.Display();
+
         }
     }
 }
