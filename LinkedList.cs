@@ -7,7 +7,7 @@ namespace LinkedListImplementation
     class LinkedList
     {
         internal Node head;
-        internal void Add(int data)
+        internal void Append(int data)
         {
             Node node = new Node(data);
             if (this.head == null)
